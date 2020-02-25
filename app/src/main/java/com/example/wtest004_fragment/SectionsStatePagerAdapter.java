@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 public class SectionsStatePagerAdapter extends FragmentStatePagerAdapter {
 
     private final List<Fragment> mFragmentList = new ArrayList();
-    private final List<Fragment> mFragmentTitleList = new ArrayList();
+    private final List<Fragment> mFragmentTitleList = new ArrayList(); //test
 
     public SectionsStatePagerAdapter(FragmentManager fm) {
         super(fm);
