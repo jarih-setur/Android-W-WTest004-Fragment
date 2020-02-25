@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new Fragment1(),"Fragment1");
         adapter.addFragment(new Fragment1(),"Fragment2");
         adapter.addFragment(new Fragment1(),"Fragment3");
+        viewPager.setAdapter(adapter);
     }
 
     public void setViewPager(int iFragmentNumber) {
