@@ -14,8 +14,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-public class Fragment1 extends Fragment {
-    private static final String TAG = "Fragment 1";
+public class Fragment2 extends Fragment {
+    private static final String TAG = "Fragment 2";
 
     private Button btnNavFrag1;
     private Button btnNavFrag2;
