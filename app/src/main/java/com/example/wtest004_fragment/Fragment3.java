@@ -26,7 +26,7 @@ public class Fragment3 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment1_layout,container,false);
+        View view = inflater.inflate(R.layout.fragment3_layout,container,false);
         btnNavFrag1 = (Button) view.findViewById(R.id.btnNavFrag1);
         btnNavFrag2 = (Button) view.findViewById(R.id.btnNavFrag2);
         btnNavFrag3 = (Button) view.findViewById(R.id.btnNavFrag3);
@@ -36,7 +36,7 @@ public class Fragment3 extends Fragment {
         btnNavFrag1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(),"Going to Fragment 1", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),R.string.toastFragment1Caption, Toast.LENGTH_SHORT).show();
                 ((MainActivity)getActivity()).setViewPager(0);
             }
         });
@@ -44,7 +44,7 @@ public class Fragment3 extends Fragment {
         btnNavFrag2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(),"Going to Fragment 2", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),R.string.toastFragment2Caption, Toast.LENGTH_SHORT).show();
                 ((MainActivity)getActivity()).setViewPager(1);
             }
         });
@@ -52,7 +52,7 @@ public class Fragment3 extends Fragment {
         btnNavFrag3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(),"Going to Fragment 3", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),R.string.toastFragment3Caption, Toast.LENGTH_SHORT).show();
                 ((MainActivity)getActivity()).setViewPager(2);
             }
         });
@@ -60,8 +60,9 @@ public class Fragment3 extends Fragment {
         btnNavSecondActivity.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(),"Going to Fragment 1", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent();
+                Toast.makeText(getActivity(),R.string.toastSecondActivityCaption, Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getActivity(),SecondActivity.class);
+                startActivity(intent);
                 // navigate to fragement method called
             }
         });

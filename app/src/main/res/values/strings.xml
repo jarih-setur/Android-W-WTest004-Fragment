@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">WTest004_Fragment</string>
+    <string name="btnFragment1Caption">Go to fragment 1</string>
+    <string name="btnFragment2Caption">Go to fragment 2</string>
+    <string name="btnFragment3Caption">Go to fragment 3</string>
+    <string name="btnSecondActivityCaption">Go to Second Activity</string>
+    <string name="toastFragment1Caption">Going to fragment 1</string>
+    <string name="toastFragment2Caption">Going to fragment 2</string>
+    <string name="toastFragment3Caption">Going to fragment 3</string>
+    <string name="toastSecondActivityCaption">Going to Second Activity</string>
+
 </resources>
